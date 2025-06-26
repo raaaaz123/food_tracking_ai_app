@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header with app name and refresh button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CALORIES"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.05"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/refresh_button"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_refresh"
+                android:tint="#FFFFFF"
+                android:alpha="0.9"
+                android:padding="2dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+        <!-- Main content - flex based layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Percentage section -->
+            <TextView
+                android:id="@+id/percentage_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Progress Bar - now larger and more visible -->
+            <ProgressBar
+                android:id="@+id/calories_progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:progressDrawable="@drawable/progress_calories"
+                android:progress="0"
+                android:max="100"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Calorie numbers - improved typography -->
+            <TextView
+                android:id="@+id/calories_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 / 2000 kcal"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <!-- Last updated with cleaner styling -->
+        <TextView
+            android:id="@+id/last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Updated: --:--"
+            android:textColor="#FFFFFF"
+            android:alpha="0.7"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            tools:ignore="HardcodedText,SmallSp" />
+    </LinearLayout>
+</RelativeLayout> 

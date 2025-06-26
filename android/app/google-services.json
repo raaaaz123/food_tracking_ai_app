@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "152671122222",
+    "project_id": "nutrizen-3f0b8",
+    "storage_bucket": "nutrizen-3f0b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152671122222:android:834896c57ce00ead5280bf",
+        "android_client_info": {
+          "package_name": "com.rexa.nutrizenai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152671122222-sdc7gfs02ov49u60dnmc4nlrih9gv7tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rexa.nutrizenai",
+            "certificate_hash": "08fcb067baa5d18b2d985c8f79489b2ab441b9ef"
+          }
+        },
+        {
+          "client_id": "152671122222-tg8j5es3664l9dpngrf4q15f0eofbc78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT76wVm9cEuUV1NoxcGeSoFWVR9c2-_eM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152671122222-tg8j5es3664l9dpngrf4q15f0eofbc78.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "152671122222-1rbpu4sg3lt1u19cra4smpg22vi5cs8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.foodAiApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

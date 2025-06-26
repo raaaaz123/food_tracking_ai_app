@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header with "NUTRITION" title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NUTRITION"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/refresh_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_refresh"
+                android:tint="#4285F4" />
+        </LinearLayout>
+
+        <!-- Percentage section -->
+        <TextView
+            android:id="@+id/percentage_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/nutrition_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:progressDrawable="@drawable/progress_calories"
+            android:progress="0"
+            android:max="100"
+            android:layout_marginTop="8dp" />
+
+        <!-- Nutrition info -->
+        <TextView
+            android:id="@+id/nutrition_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 / 0 g"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Last updated -->
+        <TextView
+            android:id="@+id/last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Updated: --:--"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</RelativeLayout> 
